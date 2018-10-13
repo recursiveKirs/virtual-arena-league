@@ -7,7 +7,7 @@ export default class Home extends Component {
       <div className="Home">
         <div className="lander">
           <h1>Virtual Arena League</h1>
-          <p>A simple note taking app</p>
+          <p>A platform for discovering and organizing competitive eSports Tournaments for everyone.</p>
         </div>
       </div>
     );
