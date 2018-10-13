@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { BrowserRouter as Router } from 'react-router-dom';
-import logo from './logo.svg';
+import { Link } from "react-router-dom";
 import './App.css';
 
 class App extends Component {
@@ -9,11 +8,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="react-logo"/>
           <p>
             Virtual Arena League
           </p>
         </header>
+
+        {/* ------- Navbar ------- */}
         <Navbar fixedTop inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
@@ -21,31 +21,18 @@ class App extends Component {
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>
+
           <Navbar.Collapse>
-            <Nav>
-              <NavItem eventKey={1} href="#">
-                Link
-              </NavItem>
-              <NavItem eventKey={2} href="#">
-                Link
-              </NavItem>
-              <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                <MenuItem eventKey={3.1}>Action</MenuItem>
-                <MenuItem eventKey={3.2}>Another action</MenuItem>
-                <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                <MenuItem divider />
-                <MenuItem eventKey={3.3}>Separated link</MenuItem>
-              </NavDropdown>
-            </Nav>
             <Nav pullRight>
+              <Navbar.Brand>
+                <Link to="/">Tournaments</Link>
+              </Navbar.Brand>
               <NavItem eventKey={1} href="#">
-                Link Right
-              </NavItem>
-              <NavItem eventKey={2} href="#">
-                Link Right
+                Login
               </NavItem>
             </Nav>
           </Navbar.Collapse>
+
         </Navbar>;
       </div>
     );
