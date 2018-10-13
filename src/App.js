@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import './App.css';
+import Routes from "./Routes";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            Virtual Arena League
-          </p>
-        </header>
-
         {/* ------- Navbar ------- */}
         <Navbar fixedTop inverse collapseOnSelect>
           <Navbar.Header>
@@ -32,8 +27,8 @@ class App extends Component {
               </NavItem>
             </Nav>
           </Navbar.Collapse>
-
-        </Navbar>;
+        </Navbar>
+        <Routes />
       </div>
     );
   }
