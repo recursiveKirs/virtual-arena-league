@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import "./Login.css";
+// import { Auth } from "aws-amplify";
 
 export default class Login extends Component {
   constructor(props) {
@@ -22,8 +23,22 @@ export default class Login extends Component {
     });
   }
 
-  handleSubmit = event => {
+  handleSubmit = async event => {
     event.preventDefault();
+
+    // try {
+    //     await Auth.signIn(this.state.email, this.state.password);
+    //     alert("Logged in");
+    //   } catch (e) {
+    //     alert(e.message);
+    //   }
+
+    this.setState({ email: "test@foo.bar" });
+
+    this.setState({ password: "moo" });
+    this.props.userHasAuthenticated(true);
+
+
   }
 
   render() {
@@ -37,6 +52,7 @@ export default class Login extends Component {
               type="email"
               value={this.state.email}
               onChange={this.handleChange}
+              ref="email_input"
             />
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
@@ -45,6 +61,7 @@ export default class Login extends Component {
               value={this.state.password}
               onChange={this.handleChange}
               type="password"
+              ref="password_input"
             />
           </FormGroup>
           <Button
