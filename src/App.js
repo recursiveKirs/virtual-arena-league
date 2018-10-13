@@ -3,30 +3,33 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import './App.css';
 import Routes from "./Routes";
+import { LinkContainer } from "react-router-bootstrap";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         {/* ------- Navbar ------- */}
         <Navbar fixedTop inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#brand">Virtual Arena League</a>
+            <Link to="/">Virtual Arena League</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
             </Navbar.Header>
 
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <Navbar.Brand>
-                <Link to="/">Tournaments</Link>
-              </Navbar.Brand>
-              <NavItem eventKey={1} href="#">
-                Login
-              </NavItem>
-            </Nav>
-          </Navbar.Collapse>
+            <Navbar.Collapse>
+              <Nav pullRight>
+                <NavItem href="/tournaments">Tournaments</NavItem>
+                <LinkContainer to="/signup">
+                  <NavItem>Signup</NavItem>
+                </LinkContainer>
+                <LinkContainer to="/login">
+                  <NavItem>Login</NavItem>
+                </LinkContainer>
+              </Nav>
+            </Navbar.Collapse>
+
         </Navbar>
         <Routes />
       </div>
