@@ -7,7 +7,6 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="lander">
-          <img className="d-block w-100" src="./images/advertisement1.png" alt="First advertisement" />
           <h1>Virtual Arena League</h1>
           <p>A platform for discovering and organizing competitive eSports Tournaments for everyone.</p>
           <Carousel id="home_carousel">
