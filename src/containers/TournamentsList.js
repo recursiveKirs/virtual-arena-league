@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import "./TournamentsList.css";
+import { API } from "aws-amplify";
 
 export default class TournamentsList extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export default class TournamentsList extends Component {
     }
   
     try {
-      const tournaments = await this.Tournaments();
+      const tournaments = await this.tournaments();
       this.setState({ tournaments });
     } catch (e) {
       alert(e);
@@ -28,10 +29,9 @@ export default class TournamentsList extends Component {
     this.setState({ isLoading: false });
   }
   
-  Tournaments() {
-    // Returns notes from aws-amplify
-    // return API.get("notes", "/notes"); 
-    return []
+  tournaments() {
+    // Returns tournaments from aws-amplify
+    return API.get("tournaments", "/tournaments"); 
   }
 
   renderTournamentsList(tournaments) {
@@ -77,8 +77,7 @@ export default class TournamentsList extends Component {
       <div className="tournaments">
         <PageHeader>Your Tournaments</PageHeader>
         <ListGroup>
-          {this.renderTournamentsList(this.state.tournaments)}
-          {/* {!this.state.isLoading && this.renderTournamentsList(this.state.tournaments)} */}
+          {!this.state.isLoading && this.renderTournamentsList(this.state.tournaments)}
         </ListGroup>
       </div>
     );
@@ -87,8 +86,7 @@ export default class TournamentsList extends Component {
   render() {
     return (
       <div className="TournamentsList">
-        {this.renderTournaments()}
-        {/* {this.props.isAuthenticated ? this.renderTournaments() : this.renderLander()} */}
+        {this.props.isAuthenticated ? this.renderTournaments() : this.renderLander()}
       </div>
     );
   }
