@@ -7,3 +7,21 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
+
+  .Home #fortnite_jumbotron {
+    background-image: url("fortnite_banner.png");
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .Home #league_jumbotron {
+    background-image: url("league_banner.png");
+    background-size: contain;
+  }
+
+  .Home .game_information {
+    color: rgb(221, 221, 221);
+    background-color: black;
+    display: inline-block;
+    white-space: nowrap;
+    }
