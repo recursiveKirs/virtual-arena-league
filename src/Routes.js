@@ -8,7 +8,7 @@ import AppliedRoute from "./components/AppliedRoute";
 import NewTournament from "./containers/NewTournament";
 import TournamentsList from "./containers/TournamentsList"
 import Fortnite from "./containers/Fortnite"
-
+import Tournaments from "./containers/Tournaments";
 
 export default ({ childProps }) =>
   <Switch>
@@ -18,7 +18,7 @@ export default ({ childProps }) =>
     <AppliedRoute path="/NewTournament" exact component={NewTournament} props={childProps} />
     <AppliedRoute path="/TournamentsList" exact component={TournamentsList} props={childProps} />
     <AppliedRoute path="/Fortnite" exact component={Fortnite} props={childProps} />
-    
+    <AppliedRoute path="/tournaments/:id" exact component={Tournaments} props={childProps} />
     { /* Finally, catch all unmatched routes */ }
     <Route component={NotFound} />
   </Switch>;

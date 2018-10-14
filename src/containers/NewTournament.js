@@ -53,7 +53,11 @@ export default class NewTournament extends Component {
   
       await this.createTournament({
         attachment,
-        content: this.state.content
+        tournamentName: this.state.tournamentName,
+        game: this.state.game,
+        content: this.state.content,
+        prizes: this.state.prizes,
+        participants: this.state.participants
       });
       this.props.history.push("/");
     } catch (e) {

@@ -1,0 +1,9 @@
+.Tournaments div {
+    padding-bottom: 15px;
+    padding-top: 60px;
+  }
+  
+  .Tournaments form textarea {
+    height: 300px;
+    font-size: 24px;
+  }
