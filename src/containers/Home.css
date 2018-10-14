@@ -5,7 +5,13 @@
   
   .Home .lander h1 {
     font-family: "Open Sans", sans-serif;
-    font-weight: 600;
+    font-size: 75px;
+    font-weight: 1000;
+  }
+
+  .Home .lander p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
   }
   
   #home_carousel {

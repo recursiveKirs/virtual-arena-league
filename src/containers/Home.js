@@ -8,7 +8,7 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="lander">
-          <h1>Virtual Arena League</h1>
+          <h1 id="home_main_header">Virtual Arena League</h1>
           <p>A platform for discovering and organizing competitive eSports Tournaments for everyone.</p>
           <Carousel id="home_carousel">
             <Carousel.Item>
@@ -36,15 +36,14 @@ export default class Home extends Component {
           <Jumbotron id="league_jumbotron">
           </Jumbotron>
 
-          <Jumbotron id="csgo_jumbotron">
+          <Jumbotron id="starcraft2_jumbotron">
           </Jumbotron>
 
           <Jumbotron id="dota2_jumbotron">
           </Jumbotron>
-
-          <Jumbotron id="starcraft2_jumbotron">
-          </Jumbotron>
           
+          <Jumbotron id="csgo_jumbotron">
+          </Jumbotron>
         </div>
       </div>
     );
