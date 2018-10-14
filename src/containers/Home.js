@@ -13,32 +13,14 @@ export default class Home extends Component {
           <Carousel id="home_carousel">
             <Carousel.Item>
               <div id="carousel_image1">
-                <h1 class="money_tag1">
-                  $ $ $
-                </h1>
-                <h1 class="money_tag1">
-                  Featured Tournament 1
-                </h1>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div id="carousel_image2">
-                <h1 class="money_tag2">
-                  $ $ $
-                </h1>
-                <h1 class="money_tag2">
-                Featured Tournament 2
-                </h1>
               </div>
             </Carousel.Item>
             <Carousel.Item>
               <div id="carousel_image3">
-                <h1 class="money_tag3">
-                  $ $ $
-                </h1>
-                <h1 class="money_tag3">
-                Featured Tournament 3
-                </h1>
               </div>
             </Carousel.Item>
           </Carousel>

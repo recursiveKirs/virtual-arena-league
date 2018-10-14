@@ -14,7 +14,7 @@
   }
 
   .Home #fortnite_jumbotron {
-    background-image: url("images/fortnite_banner.png");;
+    background-image: url("images/fortnite_banner.png");
     background-size: contain;
   }
 
@@ -46,20 +46,18 @@
     }
 
   .Home #carousel_image1 {
-    background-color: lightblue;
     width: 900px;
     height: 500px;
-    background-image: url("images/advertisement1.png");
+    background-image: url("images/tourn1_banner.png");
     background-size: contain;
     display: inline-block;
-    text-align: center;
-  }
+  } 
 
   .Home #carousel_image2 {
     background-color:lightcoral;
     width: 900px;
     height: 500px;
-    background-image: url("images/advertisement2.png");
+    background-image: url("images/tourn2_banner.png");
     background-size: contain;
     display: inline-block;
     text-align: center;
@@ -69,7 +67,7 @@
     background-color:lightsalmon;
     width: 900px;
     height: 500px;
-    background-image: url("images/advertisement3.png");
+    background-image: url("images/tourn3_banner.png");
     background-size: contain;
     display: inline-block;
     text-align: center;
