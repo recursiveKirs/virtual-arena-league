@@ -48,7 +48,7 @@ export default class TournamentsList extends Component {
               </LinkContainer>
             : <LinkContainer
                 key="new"
-                to="/CreateTournament"
+                to="/NewTournament"
               >
                 <ListGroupItem>
                   <h4>

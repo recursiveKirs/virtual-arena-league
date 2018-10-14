@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
-import "./CreateTournament.css";
+import "./NewTournament.css";
+import { API } from "aws-amplify";
 
-export default class CreateTournament extends Component {
+export default class NewTournament extends Component {
   constructor(props) {
     super(props);
 
@@ -41,9 +42,36 @@ export default class CreateTournament extends Component {
     this.setState({ isLoading: true });
   }
 
+  handleSubmit = async event => {
+    event.preventDefault();
+  
+    if (this.file && this.file.size > config.MAX_ATTACHMENT_SIZE) {
+      alert(`Please pick a file smaller than ${config.MAX_ATTACHMENT_SIZE/1000000} MB.`);
+      return;
+    }
+  
+    this.setState({ isLoading: true });
+  
+    try {
+      await this.createTournament({
+        content: this.state.content
+      });
+      this.props.history.push("/");
+    } catch (e) {
+      alert(e);
+      this.setState({ isLoading: false });
+    }
+  }
+
+  createTournament(tournament) {
+    return API.post("tournaments", "/tournaments", {
+      body: tournament
+    });
+  }
+
   render() {
     return (
-      <div className="CreateTournament">  
+      <div className="NewTournament">  
         <div className="Lander">
             <h2>Create a Tournament</h2>
             <form onSubmit={this.handleSubmit}>
