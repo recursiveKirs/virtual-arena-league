@@ -38,7 +38,6 @@ export default class Login extends Component {
     this.setState({ password: "moo" });
     this.props.userHasAuthenticated(true);
 
-
   }
 
   render() {

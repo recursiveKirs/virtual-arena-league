@@ -1,4 +1,5 @@
 export default {
+    MAX_ATTACHMENT_SIZE: 5000000,
     s3: {
       REGION: "unimplemented_UPLOADS_BUCKET_REGION",
       BUCKET: "unimplemented_S3_UPLOADS_BUCKET_NAME"
@@ -22,5 +23,4 @@ export default {
       IDENTITY_POOL_ID: "EXAMPLE_IDENTITY_POOL_ID"
     }
   };
-// Other code possibly missing
-// MAX_ATTACHMENT_SIZE: 5000000,
+
