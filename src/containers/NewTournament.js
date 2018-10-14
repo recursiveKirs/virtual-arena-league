@@ -14,7 +14,11 @@ export default class NewTournament extends Component {
 
     this.state = {
       isLoading: null,
-      content: ""
+      tournamentName: "",
+      game: "",
+      content: "",
+      prizes: "",
+      participants: []
     };
   }
 
@@ -70,17 +74,57 @@ export default class NewTournament extends Component {
         <div className="Lander">
             <h2>Create a Tournament</h2>
             <form onSubmit={this.handleSubmit}>
-                <FormGroup controlId="content">
-                <FormControl
-                    onChange={this.handleChange}
-                    value={this.state.content}
-                    componentClass="textarea"
-                />
+
+                
+
+                <FormGroup controlId="tournamentName">
+                  <FormControl
+                      onChange={this.handleChange}
+                      value={this.state.tournamentName}
+                      placeholder="Enter Tournament Name"
+                      componentClass="input"
+                  />
                 </FormGroup>
+
+                <FormGroup controlId="game">
+                  <ControlLabel>Select a game</ControlLabel>
+                  <FormControl 
+                      onChange={this.handleChange}
+                      value={this.state.game}
+                      componentClass="select" 
+                      placeholder="select">
+                    <option value="select">select</option>
+                    <option value="fortnite">Fortnite</option>
+                    <option value="league_of_legends">League of Legends</option>
+                    <option value="counter_strike">Counter Strike: Global Offensive</option>
+                    <option value="dota_2">Dota 2s</option>
+                    <option value="starcraft_2">Starcraft II</option>
+                  </FormControl>
+                </FormGroup>
+
+                <FormGroup controlId="content">
+                  <ControlLabel>Content</ControlLabel>
+                  <FormControl
+                      onChange={this.handleChange}
+                      value={this.state.content}
+                      componentClass="textarea"
+                  />
+                </FormGroup>
+
+                <FormGroup controlId="prizes">
+                  <FormControl
+                      onChange={this.handleChange}
+                      value={this.state.prizes}
+                      placeholder="Enter prizes"
+                      componentClass="input"
+                  />
+                </FormGroup>
+
                 <FormGroup controlId="file">
                 <ControlLabel>Attachment</ControlLabel>
                 <FormControl onChange={this.handleFileChange} type="file" />
                 </FormGroup>
+
                 <LoaderButton
                 block
                 bsStyle="primary"

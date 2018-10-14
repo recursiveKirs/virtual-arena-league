@@ -16,26 +16,31 @@
   .Home #fortnite_jumbotron {
     background-image: url("images/fortnite_banner.png");
     background-size: contain;
+    cursor: pointer;
   }
 
   .Home #league_jumbotron {
     background-image: url("images/league_banner.png");
     background-size: contain;
+    cursor: pointer;
   }
 
   .Home #csgo_jumbotron {
     background-image: url("images/csgo_banner.png");
     background-size: contain;
+    cursor: pointer;
   }
 
   .Home #dota2_jumbotron {
     background-image: url("images/dota2_banner.png");
     background-size: contain;
+    cursor: pointer;
   }
 
   .Home #starcraft2_jumbotron {
     background-image: url("images/starcraft2_banner.png");
     background-size: contain;
+    cursor: pointer;
   }
 
   .Home .game_information {
