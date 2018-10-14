@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel, Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron, Carousel, Button } from 'react-bootstrap';
 import "./Home.css";
 
 export default class Home extends Component {
@@ -7,29 +7,39 @@ export default class Home extends Component {
     return (
       <div className="Home">
         <div className="lander">
+          <img className="d-block w-100" src="./images/advertisement1.png" alt="First advertisement" />
           <h1>Virtual Arena League</h1>
           <p>A platform for discovering and organizing competitive eSports Tournaments for everyone.</p>
-          <Carousel>
+          <Carousel id="home_carousel">
             <Carousel.Item>
-              <img alt="advertisement 1" src="advertisement1.png" />
-              <Carousel.Caption>
-                <h3>First advertisement</h3>
-                <p>Making money from first advertisement.</p>
-              </Carousel.Caption>
+              <div id="carousel_image1">
+                <h1 class="money_tag1">
+                  $ $ $
+                </h1>
+                <h1 class="money_tag1">
+                  Featured Tournament 1
+                </h1>
+              </div>
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="advertisement 2" src="advertisement2.png" />
-              <Carousel.Caption>
-                <h3>Second Advertisement</h3>
-                <p>Making money from second advertisement</p>
-              </Carousel.Caption>
+              <div id="carousel_image2">
+                <h1 class="money_tag2">
+                  $ $ $
+                </h1>
+                <h1 class="money_tag2">
+                Featured Tournament 2
+                </h1>
+              </div>
             </Carousel.Item>
             <Carousel.Item>
-              <img alt="advertisement 3" src="advertisement3.png" />
-              <Carousel.Caption>
-                <h3>Third advertisement</h3>
-                <p>Making money from third advertisement.</p>
-              </Carousel.Caption>
+              <div id="carousel_image3">
+                <h1 class="money_tag3">
+                  $ $ $
+                </h1>
+                <h1 class="money_tag3">
+                Featured Tournament 3
+                </h1>
+              </div>
             </Carousel.Item>
           </Carousel>
           <Jumbotron id="fortnite_jumbotron">

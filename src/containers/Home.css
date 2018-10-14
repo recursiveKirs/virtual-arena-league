@@ -7,30 +7,34 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
   }
+  
+  #home_carousel {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 
   .Home #fortnite_jumbotron {
-    background-image: url("fortnite_banner.png");
+    background-image: url("images/fortnite_banner.png");;
     background-size: contain;
-    background-color: rgba(0, 0, 0, 0.75);
   }
 
   .Home #league_jumbotron {
-    background-image: url("league_banner.png");
+    background-image: url("images/league_banner.png");
     background-size: contain;
   }
 
   .Home #csgo_jumbotron {
-    background-image: url("csgo_banner.png");
+    background-image: url("images/csgo_banner.png");
     background-size: contain;
   }
 
   .Home #dota2_jumbotron {
-    background-image: url("dota2_banner.png");
+    background-image: url("images/dota2_banner.png");
     background-size: contain;
   }
 
   .Home #starcraft2_jumbotron {
-    background-image: url("starcraft2_banner.png");
+    background-image: url("images/starcraft2_banner.png");
     background-size: contain;
   }
 
@@ -40,3 +44,53 @@
     display: inline-block;
     white-space: nowrap;
     }
+
+  .Home #carousel_image1 {
+    background-color: lightblue;
+    width: 900px;
+    height: 500px;
+    background-image: url("images/advertisement1.png");
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .Home #carousel_image2 {
+    background-color:lightcoral;
+    width: 900px;
+    height: 500px;
+    background-image: url("images/advertisement2.png");
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .Home #carousel_image3 {
+    background-color:lightsalmon;
+    width: 900px;
+    height: 500px;
+    background-image: url("images/advertisement3.png");
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .Home .money_tag1 {
+    color: green;
+    font-size: 112px;
+  }
+
+  .Home .money_tag2 {
+    color: blue;
+    font-size: 112px;
+  }
+
+  .Home .money_tag3 {
+    color: red;
+    font-size: 112px;
+  }
+
+  .Home .advertisement1 {
+    color: lightskyblue;
+    font-size: 112px;
+  }
