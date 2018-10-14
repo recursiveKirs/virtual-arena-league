@@ -19,6 +19,21 @@
     background-size: contain;
   }
 
+  .Home #csgo_jumbotron {
+    background-image: url("csgo_banner.png");
+    background-size: contain;
+  }
+
+  .Home #dota2_jumbotron {
+    background-image: url("dota2_banner.png");
+    background-size: contain;
+  }
+
+  .Home #starcraft2_jumbotron {
+    background-image: url("starcraft2_banner.png");
+    background-size: contain;
+  }
+
   .Home .game_information {
     color: rgb(221, 221, 221);
     background-color: black;

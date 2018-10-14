@@ -58,7 +58,7 @@ export default class Home extends Component {
               </p>
             </div>
           </Jumbotron>
-          <Jumbotron>
+          <Jumbotron id="csgo_jumbotron">
           <div>
               <h1 class="game_information">Counter Strike: Global Offensive</h1>
             </div>
@@ -71,7 +71,7 @@ export default class Home extends Component {
               </p>
             </div>
           </Jumbotron>
-          <Jumbotron>
+          <Jumbotron id="dota2_jumbotron">
             <div>
               <h1 class="game_information">Dota 2</h1>
             </div>
@@ -84,7 +84,7 @@ export default class Home extends Component {
               </p>
             </div>
           </Jumbotron>
-          <Jumbotron>
+          <Jumbotron id="starcraft2_jumbotron">
             <div>
               <h1 class="game_information">Startcraft II</h1>
             </div>
