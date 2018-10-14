@@ -14,32 +14,37 @@
   }
 
   .Home #fortnite_jumbotron {
-    background-image: url("images/fortnite_banner.png");
-    background-size: contain;
+    background-image: url("images/fortnite_banner.jpg");
+    background-size: cover;
+    height: 250px;
     cursor: pointer;
   }
 
   .Home #league_jumbotron {
-    background-image: url("images/league_banner.png");
-    background-size: contain;
+    background-image: url("images/league_banner.jpg");
+    background-size: cover;
+    height: 250px;
     cursor: pointer;
   }
 
   .Home #csgo_jumbotron {
-    background-image: url("images/csgo_banner.png");
-    background-size: contain;
+    background-image: url("images/csgo_banner.jpg");
+    background-size: cover;
+    height: 250px;
     cursor: pointer;
   }
 
   .Home #dota2_jumbotron {
-    background-image: url("images/dota2_banner.png");
-    background-size: contain;
+    background-image: url("images/dota2_banner.jpg");
+    background-size: cover;
+    height: 250px;
     cursor: pointer;
   }
 
   .Home #starcraft2_jumbotron {
-    background-image: url("images/starcraft2_banner.png");
-    background-size: contain;
+    background-image: url("images/starcraft2_banner.jpg");
+    background-size: cover;
+    height: 250px;
     cursor: pointer;
   }
 

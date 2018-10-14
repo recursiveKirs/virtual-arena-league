@@ -30,49 +30,19 @@ export default class Home extends Component {
                   to="/Fortnite"
                 >
           <Jumbotron id="fortnite_jumbotron" >
-            <div>
-              <h1 class="game_information">Fortnite</h1>
-            </div>
-            <div>
-              <p class="game_information"> A battle royal game</p>
-            </div>
           </Jumbotron>
           </LinkContainer>
 
           <Jumbotron id="league_jumbotron">
-            <div>
-              <h1 class="game_information">League of Legends</h1>
-            </div>
-            <div>
-              <p class="game_information">A multiplayer online battle arena game</p>
-            </div>
           </Jumbotron>
 
           <Jumbotron id="csgo_jumbotron">
-          <div>
-              <h1 class="game_information">Counter Strike: Global Offensive</h1>
-            </div>
-            <div>
-              <p class="game_information"> A first-person shooter game.</p>
-            </div>
           </Jumbotron>
 
           <Jumbotron id="dota2_jumbotron">
-            <div>
-              <h1 class="game_information">Dota 2</h1>
-            </div>
-            <div>
-              <p class="game_information">A multiplayer online battle arena game</p>
-            </div>
           </Jumbotron>
 
           <Jumbotron id="starcraft2_jumbotron">
-            <div>
-              <h1 class="game_information">Startcraft II</h1>
-            </div>
-            <div>
-              <p class="game_information">A real-time strategy game</p>
-            </div>
           </Jumbotron>
           
         </div>
