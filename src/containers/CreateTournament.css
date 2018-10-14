@@ -1,9 +1,9 @@
-.CreateTournament .TournamentForm {
+.CreateTournament .Lander {
   padding: 80px 0;
   text-align: center;
 }
 
-.CreateTournament .TournamentForm h2 {
+.CreateTournament .Lander h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-align: left;

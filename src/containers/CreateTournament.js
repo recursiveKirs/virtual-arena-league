@@ -44,7 +44,7 @@ export default class CreateTournament extends Component {
   render() {
     return (
       <div className="CreateTournament">  
-        <div className="TournamentForm">
+        <div className="Lander">
             <h2>Create a Tournament</h2>
             <form onSubmit={this.handleSubmit}>
                 <FormGroup controlId="content">

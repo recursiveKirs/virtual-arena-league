@@ -40,7 +40,7 @@ class App extends Component {
 
             <Navbar.Collapse>
               <Nav pullRight>
-                <NavItem href="/tournaments">Tournaments</NavItem>
+                <NavItem href="/TournamentsList">Tournaments</NavItem>
                 {this.state.isAuthenticated
                   ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
                   : <Fragment>
